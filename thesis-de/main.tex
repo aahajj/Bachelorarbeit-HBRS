@@ -1,0 +1,79 @@
+% !TeX program = xelatex
+% !BIB program = biber
+% !TEX encoding = UTF-8 Unicode
+% !TeX spellcheck = de_DE
+
+% Template von Leon Willens adaptiert von Michael Rademacher
+% Article-Class mit 11pt Schriftgröße, Zielformat DIN A4 und Titelseite
+\documentclass[11pt,a4paper,titlepage,final,table]{article}
+
+% Meta-Commands
+\input{./meta}  
+% STY-Datei mit Package- und Command-Definitionen   		
+\usepackage{./sty/thesis-de}
+
+% Hier Literatur-Ressourcen einfügen
+\addbibresource{./lit/lit.bib}
+% \addbibresource{./lit/foo.bib}
+
+\begin{document}
+\maketitle
+% Eidesstattliche Erklärung - Kommentieren falls nicht benötigt
+\input{./metapages/affidavit}
+
+\clearpage
+\pagenumbering{roman}
+\setcounter{page}{2}
+\pagestyle{plain}
+\parskip 0.5em
+
+% Inhaltsverzeichnis
+\tableofcontents
+\clearpage
+
+% Abbildungsverzeichnis
+\listoffigures
+\clearpage
+
+% Tabellenverzeichnis
+\listoftables
+\clearpage
+
+\parskip 1em
+
+% Abstract / Kurzfassung - Kommentieren falls nicht benötigt
+\input{./section/abstract}
+
+\clearpage
+\pagenumbering{arabic}
+
+\lstset{
+	basicstyle=\ttfamily\small,
+	keywordstyle=\bfseries,
+	language=[Sharp]C
+}
+
+% Hier Inhalte einfügen
+% Einleitung
+\input{./section/intro}
+% Abschnitt 2
+%\input{./section/foo}
+
+% Literatur
+\newgeometry{top=25mm,right=20mm,bottom=20mm,left=20mm}
+\printbibliography[heading=bibintoc]
+
+\section*{Abkürzungsverzeichnis}
+\input{acro.tex}
+
+% Anhang
+\appendix
+% Für Deutsch
+\renewcommand{\appendixname}{Anhang}
+\renewcommand{\appendixtocname}{Anhang}
+\renewcommand{\appendixpagename}{Anhang}
+\begin{appendices}
+% Anhänge hier
+\end{appendices}
+
+\end{document}
