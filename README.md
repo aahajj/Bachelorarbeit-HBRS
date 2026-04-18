@@ -4,7 +4,7 @@ In diesem Repository findet ihr die Vorlage für die Bachelorarbeit an der Hochs
 
 > [!WARNING] Die Vorlage orientiert sich zwar größtenteils an den Vorgaben aus dem Dokument „[Regeln für wissenschaftliche Arbeiten – Version 9.2.1](./Regeln_für_wissenschaftliche_Arbeiten/Regeln_für_wissenschaftliche_Arbeiten_9.2.1.pdf)" der Hochschule, jedoch musst ihr trotzdem euren Betreuer oder eure Betreuerin fragen, ob die Vorlage für sie in Ordnung ist, bevor ihr sie verwendet.
 
-Unter dem Ordner [Example](./Example) findet ihr paar Auschnitte aus meiner Bachlorarbeit. Ein anderes Beispiel von einer leeren Bachlorarbeit findet ihr unter [main.pdf](./thesis-de/main.pdf).
+Ein Beispiel von einer leeren Bachlorarbeit findet ihr unter [main.pdf](./thesis-de/main.pdf).
 
 ## Vorteile des Systems
 
